@@ -3,19 +3,19 @@ const express = require('express')
 const app = express()
 const port = 3000
 app.get('/', (req, res) => {
-    res.send('Hello Virtual Machine! (GET req btw')
+    res.send('Hello Virtual Machine! (GET request)')
 })
 
 app.post('/post', function (req, res) {
-    res.send('Got a POST request')
+    res.send('Got a POST request at /[pst')
 })
 
 app.put('/put', function (req, res) {
-    res.send('Got a PUT request at /user')
+    res.send('Got a PUT request at /put')
 })
 
 app.delete('/delete', function (req, res) {
-    res.send('Got a DELETE request at /user')
+    res.send('Got a DELETE request at /delete')
 })
 
 app.get('/servicea', (req, res) => {
